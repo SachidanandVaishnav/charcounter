@@ -1,0 +1,46 @@
+<html> 
+<body> 
+<style type="text/css"> 
+div#Cc_statusBar { 
+  width: 100%; 
+  height: 18px; 
+  background-color: #ebebeb; 
+  border-top: 1px solid silver; 
+  color: black; 
+  position: fixed; 
+  bottom: 0; 
+  z-index: 25000; 
+  text-align: right; 
+} 
+
+span.Cc_statusBarCounter { 
+  padding: 0 10px 0 10px; 
+  line-height: 18px; 
+  font-family: verdana; 
+  font-size: 10pt; 
+} 
+
+span.Cc_statusBarCounter a { 
+  text-decoration: none; 
+  color: black; 
+} 
+
+span.Cc_statusBarSeparator { 
+  border-left: 1px solid silver; 
+  border-right: 1px solid silver; 
+  margin: 0 1px; 
+  display: inline-block; 
+  width: 1px; 
+  height: 10px; 
+} 
+</style> 
+<div id='Cc_statusBar'> 
+<span class='Cc_statusBarCounter'>
+<a href='#'>Cc</a>
+</span> 
+<span class='Cc_statusBarSeparator'>
+</span> 
+<span class='Cc_statusBarCounter' id='Cc_totalCharacters'>Character count...</span> 
+</div> 
+</body> 
+</html>

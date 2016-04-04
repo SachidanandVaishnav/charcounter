@@ -1,0 +1,28 @@
+{
+	"version": "0.4",
+	"name": "Character Counter",
+	"manifest_version": 2,
+	"description": "Character counter statusbar for each input character on the page!",
+	//To activate icon in the address bar
+	"background" : { "scripts": ["background.js"] },
+	"page_action" :
+	{
+		"default_icon" : "cc-icon.png",
+		"default_title" : "Cc statusbar is active"
+	},
+	//run in the context of web pages
+	"content_scripts": [
+	{
+		"matches": ["http://*/*"],//to activate extension
+		"js": ["jq.js", "main.js"],//choosing script if matches is positive
+		"run_at": "document_idle"//when to load above scripts
+	}
+	],
+	//to be used for browser display
+	"icons": {
+		"48": "cc-icon_48.png",
+		"128": "cc-icon_128.png"
+	},
+	//contains all the resources to be loaded
+	"web_accessible_resources" : ["statusbar.html"]//contains all the resources to be loaded
+}
