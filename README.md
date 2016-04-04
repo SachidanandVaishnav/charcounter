@@ -1,8 +1,6 @@
 # charcounter
 Chrome Extension for character input
 
-# README #
-
 * Author : Sachidanand
 
 This README would normally document whatever steps are necessary to get your application up and running.
