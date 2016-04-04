@@ -15,8 +15,8 @@ This README would normally document whatever steps are necessary to get your app
 * Summary of set up - Download the zip file, unzip, load the extension to chrome browser and get the count at bottom in status bar.
 * Configuration - Chrome web browser
 * Deployment & uses instructions -  
-1. Settings
-2. Extensions
+1. Go to Chrome Browser Settings
+2. then Extensions
 3. Check Developer mode
 4. Load unpacked extension (the downloaded zip of "CharacterCounter" from bit repo.)
 5. Enable extension after loading.
